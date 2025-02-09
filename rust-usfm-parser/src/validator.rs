@@ -52,7 +52,8 @@ pub fn get_message(&self) -> &str {
     &self.message
 }
 
-    pub fn is_valid_usfm(&mut self, usfm: &str) -> Result<bool, String> {
+    pub fn 
+    is_valid_usfm(&mut self, usfm: &str) -> Result<bool, String> {
         // Parse USFM and handle the Result
         let tree = self.parser.parse_usfm(&usfm).map_err(|e| format!("Failed to parse USFM: {}", e))?;
     
